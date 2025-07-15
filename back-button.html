@@ -3,35 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sleek Back Button</title>
-    <!-- Tailwind CSS for styling -->
+    <title>Sleek Back Button - Centered</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
             /* Using Inter font for the button text */
             font-family: 'Inter', sans-serif;
-            /* Added some padding so the button isn't stuck at the top-left corner in the preview */
-            padding: 2rem;
         }
     </style>
 </head>
-<body>
+<body class="flex items-center justify-center min-h-screen">
 
-    <!-- Sleek Back Button -->
-    <button 
-        onclick="history.back()" 
+    <button
+        onclick="history.back()"
         class="group flex items-center justify-center bg-white hover:bg-gray-200 text-gray-800 font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-4 focus:ring-blue-300">
-        <!-- Back Arrow SVG Icon -->
-        <svg 
-            class="w-5 h-5 mr-3 transition-transform duration-300 ease-in-out group-hover:-translate-x-1" 
-            xmlns="http://www.w3.org/2000/svg" 
-            fill="none" 
-            viewBox="0 0 24 24" 
+        <svg
+            class="w-5 h-5 mr-3 transition-transform duration-300 ease-in-out group-hover:-translate-x-1"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
             stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>
-        <!-- Button Text -->
         <span>Back</span>
     </button>
 
